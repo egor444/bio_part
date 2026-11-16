@@ -1,9 +1,8 @@
-# bio_part
+# BioPart
 
 A small toolkit for splitting protein sequence datasets into train/validation/test sets and
 analysing how similar their physiochemical property distributions are. It's built around
-three interchangeable split strategies and a command-line entry point that ties reading,
-splitting, plotting and reporting together.
+two main split strategies and a command-line entry point.
 
 ## What it does
 
@@ -39,6 +38,17 @@ pip install --index-url https://test.pypi.org/simple/ --no-deps bio-part
 
 All required dependencies (Biopython, scikit-learn, scipy, joblib, pandas, numpy, matplotlib)
 are installed automatically — there's nothing extra to install by hand.
+
+### Installing for local development
+ 
+```bash
+git clone https://github.com/egor444/bio_part.git
+cd bio_part
+pip install -e .
+```
+ 
+The `-e` (editable) install lets you edit the source under `src/bio_part/` and have changes
+take effect immediately, without reinstalling.
 
 ## Usage
 
